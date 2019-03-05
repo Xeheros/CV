@@ -1,0 +1,107 @@
+\documentclass[11pt, a4paper, sans]{moderncv}
+
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+
+\setlength{\hintscolumnwidth}{2cm}
+
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.8]{geometry}
+\usepackage{helvet}
+\usepackage[english]{babel}
+\usepackage{tikz}
+
+\DeclareUnicodeCharacter{2605}{\starfull}
+\DeclareUnicodeCharacter{2606}{\starempty}
+
+\name{Quentin}{FOURNIER}
+\title{Curriculum Vitae}
+\address{82, Boulevard Carnot}{59\,800 LILLE}{FRANCE}
+\phone[mobile]{(+33)\,06~68~07~85~41}
+\email{xeheros@gmail.com}
+\homepage{xeheros.com}
+\social[linkedin]{quentinfournier}
+\social[twitter]{xeheros}
+\social[github]{xeheros}
+
+\photo[128pt][0.4pt]{profil.jpg}
+
+\begin{document}
+
+\makecvtitle{}
+
+\section{Education}
+
+\cventry{2013--2015}{Master 2 Informatique}{Université Lille 1}{Villeneuve d'Ascq}{\textit{Spécialité Image, Vision, Interaction}}{}
+\cventry{2012--2013}{Licence Informatique}{Université Lille 1}{Villeneuve d'Ascq}{\textit{Global programmer}}{}
+\cventry{2010--2012}{DUT Informatique}{Institut Universitaire et Technologique}{Reims}{\textit{Global programmer}}{}
+
+\section{Work Experience}
+
+\cventry{2018--2019}{Game Programmer Generalist}{YS Interactive}{Valenciennes}
+            {recherche et développement sur des nano-membranes de Silicium.}
+{
+\begin{itemize}
+\item  Mise en œuvre et procédés en salle blanche ;
+\item intégration et caractérisation des membranes MEMS d'épaisseur nanométrique
+  \begin{itemize}
+  \item AFM ;
+  \item  Vibromètre laser ;
+  \item MEB.
+  \end{itemize}
+\end{itemize}}
+
+\cventry{2015--2017}{Game Programmer Generalist}{ENIGAMI}{Tourcoing}
+            {recherche et développement sur des nano-membranes de Silicium.}
+{
+\begin{itemize}
+\item  Mise en œuvre et procédés en salle blanche ;
+\item intégration et caractérisation des membranes MEMS d'épaisseur nanométrique
+  \begin{itemize}
+  \item AFM ;
+  \item  Vibromètre laser ;
+  \item MEB.
+  \end{itemize}
+\end{itemize}}
+
+\section{Personal Projects}
+
+\section{Skills}
+
+\cvdoubleitem{}{\begin{tikzpicture}
+\node [anchor=west] at (.1,.8) {Unreal Engine 4};
+\draw [fill=gray] (0,0) rectangle (5,.5);
+\draw [fill={rgb:red,1;green,2;blue,3}] (0,0) rectangle (4.5,.5);
+\end{tikzpicture}}{}{\begin{tikzpicture}
+\node [anchor=west] at (.1,.8) {Unity 3D};
+\draw [fill=gray] (0,0) rectangle (5,.5);
+\draw [fill={rgb:red,1;green,2;blue,3}] (0,0) rectangle (4,.5);
+\end{tikzpicture}}
+
+\cvdoubleitem{}{\begin{tikzpicture}
+\node [anchor=west] at (.1,.8) {C\#};
+\draw [fill=gray] (0,0) rectangle (5,.5);
+\draw [fill={rgb:red,1;green,2;blue,3}] (0,0) rectangle (4,.5);
+\end{tikzpicture}}{}{\begin{tikzpicture}
+\node [anchor=west] at (.1,.8) {C++};
+\draw [fill=gray] (0,0) rectangle (5,.5);
+\draw [fill={rgb:red,1;green,2;blue,3}] (0,0) rectangle (3,.5);
+\end{tikzpicture}}
+\cvitem{}{\begin{tikzpicture}
+\node [anchor=west] at (.1,.8) {\LaTeX};
+\draw [fill=gray] (0,0) rectangle (5,.5);
+\draw [fill={rgb:red,1;green,2;blue,3}] (0,0) rectangle (2,.5);
+\end{tikzpicture}}
+
+\section{Languages}
+
+\cvitemwithcomment{French}{Native}{}
+\cvitemwithcomment{English}{Read, Written, Spoken}{}
+
+\section{Hobbies}
+
+\cvitem{Game Design}{I like making game concept.}
+
+\cvitem{Photography}{Shooting my holidays.}
+
+\end{document}

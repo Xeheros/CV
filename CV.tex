@@ -1,4 +1,4 @@
-\documentclass[11pt, a4paper, sans]{moderncv}
+\documentclass[10pt, a4paper, sans]{moderncv}
 
 \moderncvstyle{classic}
 \moderncvcolor{blue}
@@ -10,12 +10,10 @@
 \usepackage{helvet}
 \usepackage[english]{babel}
 \usepackage{tikz}
-
-\DeclareUnicodeCharacter{2605}{\starfull}
-\DeclareUnicodeCharacter{2606}{\starempty}
+\usepackage{multicol}
 
 \name{Quentin}{FOURNIER}
-\title{Curriculum Vitae}
+\title{Gameplay Programmer}
 \address{82, Boulevard Carnot}{59\,800 LILLE}{FRANCE}
 \phone[mobile]{(+33)\,06~68~07~85~41}
 \email{xeheros@gmail.com}
@@ -32,66 +30,107 @@
 
 \section{Education}
 
-\cventry{2013--2015}{Master 2 Informatique}{Université Lille 1}{Villeneuve d'Ascq}{\textit{Spécialité Image, Vision, Interaction}}{}
-\cventry{2012--2013}{Licence Informatique}{Université Lille 1}{Villeneuve d'Ascq}{\textit{Global programmer}}{}
-\cventry{2010--2012}{DUT Informatique}{Institut Universitaire et Technologique}{Reims}{\textit{Global programmer}}{}
+\cventry{2013--2015}{Master 2 Informatique}{Université Lille 1}{Villeneuve d'Ascq}{\textit{Option Image, Vision, Interaction}}{}
+\cventry{2012--2013}{Licence Informatique}{Université Lille 1}{Villeneuve d'Ascq}{\textit{}}{}
+\cventry{2010--2012}{DUT Informatique}{Institut Universitaire et Technologique}{Reims}{}{}
 
 \section{Work Experience}
 
-\cventry{2018--2019}{Game Programmer Generalist}{YS Interactive}{Valenciennes}
-            {recherche et développement sur des nano-membranes de Silicium.}
+\cventry{2018--2019}{Game Programmer}{YS Interactive}{Valenciennes}
+            {Game Development on various applications}
 {
 \begin{itemize}
-\item  Mise en œuvre et procédés en salle blanche ;
-\item intégration et caractérisation des membranes MEMS d'épaisseur nanométrique
+\item Babaoo \emph{(Unity 3D -- Android)}
   \begin{itemize}
-  \item AFM ;
-  \item  Vibromètre laser ;
-  \item MEB.
+    \item Implementation of minigames
+    \item Input manager
+  \end{itemize}
+\item VR Prototype \emph{(Unreal Engine 4 -- PC)}
+  \begin{itemize}
+    \item Puzzles mechanics
+    \item Day/Night cycle
+    \item Clouds system
   \end{itemize}
 \end{itemize}}
 
-\cventry{2015--2017}{Game Programmer Generalist}{ENIGAMI}{Tourcoing}
-            {recherche et développement sur des nano-membranes de Silicium.}
+\cventry{2018--2019}{Game Programmer}{ENIGAMI}{Tourcoing}
+            {Development on Shiness: The Lightning Kingdom and some internal Game Jams}
 {
 \begin{itemize}
-\item  Mise en œuvre et procédés en salle blanche ;
-\item intégration et caractérisation des membranes MEMS d'épaisseur nanométrique
+\item Shiness: The Lightning Kingdom \emph{(Unreal Engine 4 -- PC, PS4, Xbox One)}
   \begin{itemize}
-  \item AFM ;
-  \item  Vibromètre laser ;
-  \item MEB.
+    \item UI
+    \begin{itemize}
+      \item Main menu
+      \item Minimap
+      \item Quests pop-ups
+    \end{itemize}
+    \item Gameplay
+    \begin{itemize}
+      \item Main menu
+      \item Minimap
+      \item Quests pop-ups
+    \end{itemize}
+  \end{itemize}
+\item Food Fight XVI \emph{(Unreal Engine 4 -- PC)}
+  \begin{itemize}
+    \item Puzzles mechanics
+    \item Day/Night cycle
+    \item Clouds system
   \end{itemize}
 \end{itemize}}
 
 \section{Personal Projects}
 
-\section{Skills}
+\cventry{2019--Now}{Pentagrave}{}{}
+            {Hack'n'Slash prototype made with Unreal Engine 4}
+            {Currently in design while I'm learning to implement a REST API with PHP.}
+\cventry{2016}{Warlock: First Fright}{}{}
+            {Battle arena prototype inspired by a popular Warcraft 3 mod called Warlock}
+            {Introduction to Unreal Engine 4 Network.}
+\cventry{2013}{DeepSea}{}{}
+            {Survival game initially designed for ENJMIN entrance examination}
+            {Two weeks crush to learn Unity basics.}
 
-\cvdoubleitem{}{\begin{tikzpicture}
-\node [anchor=west] at (.1,.8) {Unreal Engine 4};
-\draw [fill=gray] (0,0) rectangle (5,.5);
-\draw [fill={rgb:red,1;green,2;blue,3}] (0,0) rectangle (4.5,.5);
-\end{tikzpicture}}{}{\begin{tikzpicture}
-\node [anchor=west] at (.1,.8) {Unity 3D};
-\draw [fill=gray] (0,0) rectangle (5,.5);
-\draw [fill={rgb:red,1;green,2;blue,3}] (0,0) rectangle (4,.5);
-\end{tikzpicture}}
+\begin{multicols}{2}
+[\section{Skills}]
 
-\cvdoubleitem{}{\begin{tikzpicture}
-\node [anchor=west] at (.1,.8) {C\#};
-\draw [fill=gray] (0,0) rectangle (5,.5);
-\draw [fill={rgb:red,1;green,2;blue,3}] (0,0) rectangle (4,.5);
-\end{tikzpicture}}{}{\begin{tikzpicture}
-\node [anchor=west] at (.1,.8) {C++};
-\draw [fill=gray] (0,0) rectangle (5,.5);
-\draw [fill={rgb:red,1;green,2;blue,3}] (0,0) rectangle (3,.5);
-\end{tikzpicture}}
-\cvitem{}{\begin{tikzpicture}
-\node [anchor=west] at (.1,.8) {\LaTeX};
-\draw [fill=gray] (0,0) rectangle (5,.5);
-\draw [fill={rgb:red,1;green,2;blue,3}] (0,0) rectangle (2,.5);
-\end{tikzpicture}}
+\begin{tikzpicture}
+  \node [anchor=east] at (0,0) {Unreal Engine 4};
+  \draw [fill=gray] (0,0) rectangle (5,.5);
+  \draw [fill={rgb:red,1;green,2;blue,3}] (0,0) rectangle (2,.5);
+  \end{tikzpicture}
+
+\begin{tikzpicture}
+  \node [anchor=east] at (0,0) {Unity 3D};
+  \draw [fill=gray] (0,0) rectangle (5,.5);
+  \draw [fill={rgb:red,1;green,2;blue,3}] (0,0) rectangle (2,.5);
+  \end{tikzpicture}
+
+\begin{tikzpicture}
+  \node [anchor=east] at (0,0) {C\#};
+  \draw [fill=gray] (0,0) rectangle (5,.5);
+  \draw [fill={rgb:red,1;green,2;blue,3}] (0,0) rectangle (2,.5);
+  \end{tikzpicture}
+
+\begin{tikzpicture}
+  \node [anchor=east] at (0,0) {C++};
+  \draw [fill=gray] (0,0) rectangle (5,.5);
+  \draw [fill={rgb:red,1;green,2;blue,3}] (0,0) rectangle (2,.5);
+  \end{tikzpicture}  
+
+  \begin{tikzpicture}
+    \node [anchor=east] at (0,0) {\LaTeX};
+    \draw [fill=gray] (0,0) rectangle (5,.5);
+    \draw [fill={rgb:red,1;green,2;blue,3}] (0,0) rectangle (2,.5);
+    \end{tikzpicture}
+  
+  \begin{tikzpicture}
+    \node [anchor=east] at (0,0) {PHP};
+    \draw [fill=gray] (0,0) rectangle (5,.5);
+    \draw [fill={rgb:red,1;green,2;blue,3}] (0,0) rectangle (2,.5);
+    \end{tikzpicture}  
+\end{multicols}
 
 \section{Languages}
 
@@ -100,8 +139,8 @@
 
 \section{Hobbies}
 
-\cvitem{Game Design}{I like making game concept.}
+\cvitem{Game Design}{I like making game concept during my free time.}
 
-\cvitem{Photography}{Shooting my holidays.}
+\cvitem{Photography}{I'm shooting landscapes when I'm travelling. I've also done some photos for friends weddings.}
 
 \end{document}

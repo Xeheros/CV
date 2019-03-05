@@ -1,155 +1,163 @@
-\documentclass[10pt, a4paper, sans]{moderncv}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.1 (8/1/17)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\moderncvstyle{classic}
-\moderncvcolor{blue}
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
 
-\setlength{\hintscolumnwidth}{2cm}
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
 
-\usepackage[utf8]{inputenc}
-\usepackage[scale=0.8]{geometry}
-\usepackage{helvet}
-\usepackage[english]{babel}
-\usepackage{tikz}
-\usepackage{multicol}
+\usepackage{lipsum}
 
-\name{Quentin}{FOURNIER}
-\title{Gameplay Programmer}
-\address{82, Boulevard Carnot}{59\,800 LILLE}{FRANCE}
-\phone[mobile]{(+33)\,06~68~07~85~41}
-\email{xeheros@gmail.com}
-\homepage{xeheros.com}
-\social[linkedin]{quentinfournier}
-\social[twitter]{xeheros}
-\social[github]{xeheros}
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
 
-\photo[128pt][0.4pt]{profil.jpg}
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\profilepic{profil.jpg} % Profile picture
+
+\cvname{Quentin\\FOURNIER} % Your name
+\cvjobtitle{Game Programmer} % Job title/career
+
+\cvdate{27 May 1992} % Date of birth
+\cvaddress{France} % Short address/location, use \newline if more than 1 line is required
+\cvnumberphone{+33 0668078541} % Phone number
+\cvsite{\href{https://xeheros.com}{https://xeheros.com}} % Personal website
+\cvmail{xeheros@gmail.com} % Email address
+
+%----------------------------------------------------------------------------------------
 
 \begin{document}
 
-\makecvtitle{}
+%----------------------------------------------------------------------------------------
+%	 ABOUT ME
+%----------------------------------------------------------------------------------------
+
+\aboutme{\lipsum[2]} % To have no About Me section, just remove all the text and leave \aboutme{}
+
+%----------------------------------------------------------------------------------------
+%	 SKILLS
+%----------------------------------------------------------------------------------------
+
+% Skill bar section, each skill must have a value between 0 an 6 (float)
+\skills{{PHP/1.5},{\LaTeX/3},{C++/4},{C\#/4.5},{Unity 3D/5},{Unreal Engine 4/5.35}}
+
+%------------------------------------------------
+
+% Skill text section, each skill must have a value between 0 an 6
+\skillstext{}
+
+%----------------------------------------------------------------------------------------
+
+\makeprofile % Print the sidebar
+
+%----------------------------------------------------------------------------------------
+%	 INTERESTS
+%----------------------------------------------------------------------------------------
+
+\section{Interests}
+
+The heroine and the dreamer of Wonderland; Alice is the principal character.
+
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
 
 \section{Education}
 
-\cventry{2013--2015}{Master 2 Informatique}{Université Lille 1}{Villeneuve d'Ascq}{\textit{Option Image, Vision, Interaction}}{}
-\cventry{2012--2013}{Licence Informatique}{Université Lille 1}{Villeneuve d'Ascq}{\textit{}}{}
-\cventry{2010--2012}{DUT Informatique}{Institut Universitaire et Technologique}{Reims}{}{}
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{since 1865}{Ph.D. {\normalfont candidate in Computer Science}}{Wonderland}{\emph{A Quantified Theory of Social Cohesion.}}
+	\twentyitem{1863-1865}{M.Sc. magna cum laude}{Wonderland}{Majoring in Computer Science}
+	\twentyitem{1861-1863}{B.Sc. magna cum laude}{Wonderland}{Majoring in Computer Science}
+	\twentyitem{1856-1861}{High school}{Wonderland}{Specializing in mathematics and physics.}
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
 
-\section{Work Experience}
+%----------------------------------------------------------------------------------------
+%	 PUBLICATIONS
+%----------------------------------------------------------------------------------------
 
-\cventry{2018--2019}{Game Programmer}{YS Interactive}{Valenciennes}
-            {Game Development on various applications}
-{
-\begin{itemize}
-\item Babaoo \emph{(Unity 3D -- Android)}
-  \begin{itemize}
-    \item Implementation of minigames
-    \item Input manager
-  \end{itemize}
-\item VR Prototype \emph{(Unreal Engine 4 -- PC)}
-  \begin{itemize}
-    \item Puzzles mechanics
-    \item Day/Night cycle
-    \item Clouds system
-  \end{itemize}
-\end{itemize}}
+\section{Publications}
 
-\cventry{2018--2019}{Game Programmer}{ENIGAMI}{Tourcoing}
-            {Development on Shiness: The Lightning Kingdom and some internal Game Jams}
-{
-\begin{itemize}
-\item Shiness: The Lightning Kingdom \emph{(Unreal Engine 4 -- PC, PS4, Xbox One)}
-  \begin{itemize}
-    \item UI
-    \begin{itemize}
-      \item Main menu
-      \item Minimap
-      \item Quests pop-ups
-    \end{itemize}
-    \item Gameplay
-    \begin{itemize}
-      \item Main menu
-      \item Minimap
-      \item Quests pop-ups
-    \end{itemize}
-  \end{itemize}
-\item Food Fight XVI \emph{(Unreal Engine 4 -- PC)}
-  \begin{itemize}
-    \item Local multiplayer, up to four players without splitscreen.
-    \item Character selection
-    \item Power-ups
-  \end{itemize}
-\end{itemize}}
+\begin{twentyshort} % Environment for a short list with no descriptions
+	\twentyitemshort{1865}{Chapter One, Down the Rabbit Hole.}
+	\twentyitemshort{1865}{Chapter Two, The Pool of Tears.}
+	\twentyitemshort{1865}{Chapter Three,  The Caucus Race and a Long Tale.}
+	\twentyitemshort{1865}{Chapter Four,  The Rabbit Sends a Little Bill.}
+	\twentyitemshort{1865}{Chapter Five,  Advice from a Caterpillar.}
+	%\twentyitemshort{<dates>}{<title/description>}
+\end{twentyshort}
 
-\section{Personal Projects}
+%----------------------------------------------------------------------------------------
+%	 AWARDS
+%----------------------------------------------------------------------------------------
 
-\cventry{2019--Now}{Pentagrave}{}{}
-            {Hack'n'Slash prototype made with Unreal Engine 4}
-            {Currently in design while I'm learning to implement a REST API with PHP.}
-\cventry{2016}{Warlock: First Fright}{}{}
-            {Battle arena prototype inspired by a popular Warcraft 3 mod called Warlock}
-            {Introduction to Unreal Engine 4 Network.}
-\cventry{2013}{DeepSea}{}{}
-            {Survival game initially designed for ENJMIN entrance examination}
-            {Two weeks crush to learn Unity basics.}
+\section{Awards}
 
-\begin{multicols}{2}
-[\section{Skills}]
+\begin{twentyshort} % Environment for a short list with no descriptions
+	\twentyitemshort{1987}{All-Time Best Fantasy Novel.}
+	\twentyitemshort{1998}{All-Time Best Fantasy Novel before 1990.}
+	%\twentyitemshort{<dates>}{<title/description>}
+\end{twentyshort}
 
-\begin{tikzpicture}
-  \node [anchor=east] at (0,0.25) {Unreal Engine 4};
-  \draw [fill=gray] (2,0) rectangle (7,.5);
-  \draw [fill={rgb:red,1;green,2;blue,3}] (3,0) rectangle (7,.5);
-  \end{tikzpicture}\\
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
 
-\begin{tikzpicture}
-  \node [anchor=east] at (8,0.25) {Unity 3D};
-  \draw [fill=gray] (0,0) rectangle (5,.5);
-  \draw [fill={rgb:red,1;green,2;blue,3}] (0,0) rectangle (3.5,.5);
-  \end{tikzpicture}\\
+\section{Experience}
 
-\end{multicols}
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{1900}{Alice in Wonderland-The Circra (1900's) Silent Film.}{Film}{The first Alice on film was over a hundred years ago.}
+	\twentyitem{1933}{Alice in Wonderland 1933 version.}{Film}{This film stars Ethel griffies and Charlotte Henry. It was a box office flop when it was released.}
+	\twentyitem{1951}{Disney Film.}{Film}{Walt Disney brings Lewis Carroll's fantasy story to life in this well done animated classic. Even though many elements from the book were dropped, such as the duchess with the baby pig and mock turtle, this version is without a doubt the most famous Alice adaption made.}
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
 
-\begin{multicols}{2}
+%----------------------------------------------------------------------------------------
+%	 OTHER INFORMATION
+%----------------------------------------------------------------------------------------
 
-\begin{tikzpicture}
-  \node [anchor=east] at (0,0.25) {C\#};
-  \draw [fill=gray] (2,0) rectangle (7,.5);
-  \draw [fill={rgb:red,1;green,2;blue,3}] (3,0) rectangle (7,.5);
-  \end{tikzpicture}\\
+\section{Other information}
 
-\begin{tikzpicture}
-  \node [anchor=east] at (8,0.25) {C++};
-  \draw [fill=gray] (0,0) rectangle (5,.5);
-  \draw [fill={rgb:red,1;green,2;blue,3}] (0,0) rectangle (3.5,.5);
-  \end{tikzpicture}\\
+\subsection{Review}
 
-\end{multicols}
+Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
 
-\begin{multicols}{2}
+%----------------------------------------------------------------------------------------
+%	 SECOND PAGE EXAMPLE
+%----------------------------------------------------------------------------------------
 
-\begin{tikzpicture}
-  \node [anchor=east] at (0,0.25) {\LaTeX};
-  \draw [fill=gray] (2,0) rectangle (7,.5);
-  \draw [fill={rgb:red,1;green,2;blue,3}] (3,0) rectangle (7,.5);
-  \end{tikzpicture}\\
+%\newpage % Start a new page
 
-\begin{tikzpicture}
-  \node [anchor=east] at (8,0.25) {PHP};
-  \draw [fill=gray] (0,0) rectangle (5,.5);
-  \draw [fill={rgb:red,1;green,2;blue,3}] (0,0) rectangle (3.5,.5);
-  \end{tikzpicture}\\
+%\makeprofile % Print the sidebar
 
-\end{multicols}
+%\section{Other information}
 
-\section{Languages}
+%\subsection{Review}
 
-\cvitemwithcomment{French}{Native}{}
-\cvitemwithcomment{English}{Read, Written, Spoken}{}
+%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
 
-\section{Hobbies}
+%\section{Other information}
 
-\cvitem{Game Design}{I like making game concept during my free time.}
+%\subsection{Review}
 
-\cvitem{Photography}{I'm shooting landscapes when I'm travelling. I've also done some photos for friends weddings.}
+%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
 
-\end{document}
+%----------------------------------------------------------------------------------------
+
+\end{document} 

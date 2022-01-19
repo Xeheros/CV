@@ -20,7 +20,7 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass[letterpaper]{twentysecondcv} % a4paper for A4
-
+\usepackage[french]{babel}
 \usepackage{lipsum}
 
 %----------------------------------------------------------------------------------------
@@ -32,9 +32,9 @@
 \profilepic{profil.jpg} % Profile picture
 
 \cvname{Quentin\\FOURNIER} % Your name
-\cvjobtitle{Game Programmer} % Job title/career
+\cvjobtitle{Programmeur gameplay} % Job title/career
 
-\cvdate{27 May 1992} % Date of birth
+\cvdate{27 Mai 1992} % Date of birth
 \cvaddress{82 Boulevard Carnot \newline 59\,800 LILLE, FRANCE} % Short address/location, use \newline if more than 1 line is required
 \cvnumberphone{(+33)~06~68~07~85~41} % Phone number
 \cvsite{} % Personal website
@@ -48,18 +48,18 @@
 %	 ABOUT ME
 %----------------------------------------------------------------------------------------
 
-\aboutme{Young programmer, enthusiast about Game Design and Virtual Reality. I am always looking for new technologies to work with.
+\aboutme{Passionné par la création de jeux vidéo depuis la fin du collège où j'ai découvert l'éditeur de cartes de Warcraft 3.
 		\newline
-		This CV has been made with \LaTeX, a language I have started to learn a few weeks ago to write a Game Design document.
+		J'affectionne particulièrement le moteur Unreal Engine pour son environnement de travail très complet. Je garde cependant Unity pour tous mes projets 2D, format dans lequel Unreal Engine ne brille pas nativement.
 		\newline
-		I am currently seeking new opportunities to share knowledge for the benefit of all.} % To have no About Me section, just remove all the text and leave \aboutme{}
+		Je recherche avant tout à rejoindre des projets enrichissants avec une équipe passionnée.} % To have no About Me section, just remove all the text and leave \aboutme{}
 
 %----------------------------------------------------------------------------------------
 %	 SKILLS
 %----------------------------------------------------------------------------------------
 
 % Skill bar section, each skill must have a value between 0 an 6 (float)
-\skills{{\LaTeX/2.75},{Git/4.75},{Perforce/5.5},{PHP/1.5},{C++/4},{C\#/4.5},{Unity 3D/4.75},{Unreal Engine 4/5.15}}
+\skills{{\LaTeX/2.75},{Git/4.75},{Perforce/5.15},{PHP/1.5},{C++/4},{C\#/4.5},{Unity 3D/4.75},{Unreal Engine 4/5.15}}
 
 %------------------------------------------------
 
@@ -74,13 +74,12 @@
 %	 EDUCATION
 %----------------------------------------------------------------------------------------
 
-\section{Education}
+\section{Formations}
 
 \begin{twenty} % Environment for a list with descriptions
-	\twentyitem{2013--2015}{Master 2 Informatique}{Lille}{Specializing in Image, Vision and Interaction}
+	\twentyitem{2013--2015}{Master 2 Informatique}{Lille}{Spécialisation : Image, Vision et Interaction}
 	\twentyitem{2012--2013}{Licence Informatique}{Lille}{}
 	\twentyitem{2010--2012}{DUT Informatique}{Reims}{}
-	\twentyitem{2007--2010}{Baccalauréat Scientifique}{Charleville-Mézières}{Specializing in Engineer Science.}
 	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
 \end{twenty}
 
@@ -88,14 +87,15 @@
 %	 EXPERIENCE
 %----------------------------------------------------------------------------------------
 
-\section{Experience}
+\section{Expériences professionnelles}
 
 \begin{twenty} % Environment for a list with descriptions
-	\twentyitem{2018--Today}{Equinox}{YS Interactive}{Adventure game with puzzles, dynamic clouds management and a Day/Night cycle. The base prototype is finished and I am currently working on the last pieces of the VR experience.}
-	\twentyitem{2018}{Babaoo}{YS Interactive}{Mobile game for young children helping parents to understand how their children learn.}
-	\twentyitem{2018}{\href{http://www.histoiredumondeen100objets.fr/en/video-game/}{A story of the world in 100 objects (Game in French)}}{YS Interactive}{This Point'n'Click was almost finished when YS Interactive hired me in February. I cleared many bugs before the release in March.}
-	\twentyitem{2017}{Food Fight XVI}{ENIGAMI}{Couch game in top view like Bomberman with Splatoon mechanics. \newline I was the only programmer on this project but a game designer took care of the UI with Unreal Engine Blueprints.}
-	\twentyitem{2015--2017}{\href{http://www.shiness-game.com/}{Shiness: The Lightning Kingdom}}{ENIGAMI}{A cel-shaded game mixing both Action-RPG and Fighting gameplay. I worked on UI, characters location tracking system and made big rework on enemies skills.}
+	\twentyitem{2019--2021}{PIAF [Unity]}{YS Interactive / Freelance}{Application mobile réalisée pour un centre de formation de Valenciennes.}
+	\twentyitem{2018--2019}{Equinoxe [UE4]}{YS Interactive}{Démo VR pour la vitrine du studio, réalisée avec un mélange de C++ et Blueprints.}
+	\twentyitem{2018}{Babaoo [Unity]}{YS Interactive}{Jeu mobile 3D à destination des enfants en primaire pour aider leurs parents à les accompagner dans leur apprentissage.}
+	\twentyitem{2018}{\href{http://www.histoiredumondeen100objets.fr/en/video-game/}{L'Histoire du monde en 100 objets} [Unity]}{YS Interactive}{Jeu de type Point'n'Click qui était presque terminé à mon arrivé chez Ys Interactive en Février. \newline Je me suis chargé de préparer le jeu pour une sortie en Mars.}
+	\twentyitem{2017}{Food Fight XVI [UE4]}{ENIGAMI}{Combinaison de Bomberman et Splatoon. \newline Le jeu a été développé dans le cadre d'une jam en interne et a été fait intégralement en Blueprints.}
+	\twentyitem{2015--2017}{\href{http://www.shiness-game.com/}{Shiness: The Lightning Kingdom} [UE3]}{ENIGAMI}{Jeu en cel-shading mêlant Action-RPG et jeu de combat. J'ai travaillé sur la totalité des interfaces, le système de mini-map ainsi que sur les techniques des personnages.}
 	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
 \end{twenty}
 
@@ -103,32 +103,33 @@
 %	 PERSONAL WORKS
 %----------------------------------------------------------------------------------------
 
-\section{Personal Works}
+\section{Travaux personnels}
 
 \begin{twenty}
-	\twentyitem{2019--Today}{Pentagrave}{Concept}{Multiplayer Hack'n'Slash currently in design.}
-	\twentyitem{2016}{Warlock: First Fright}{Prototype}{Arena game, based on a Warcraft 3 mod, where players have to push their opponents out of the platform like a top-down Smash Bros.}
+	\twentyitem{2021--Auj}{Pearfect [Unity]}{Jeu mobile}{Jeu de mémoire visuelle où le joueur doit retrouver des fruits dans une grille procédurale de plus en plus complexe.}
+	\twentyitem{2019--2020}{Beyond Matter [UE4]}{Prototype}{Hack'n'Slash inspiré de Diablo et Path of Exile. Des soucis avec le seamless travel du moteur lors des sessions multijoueurs m'ont fait mettre en pause le projet.}
+	\twentyitem{2016}{Warlock: First Fright [UE4]}{Prototype}{Jeu en arène, basé sur le mod Warlock de Warcraft 3. \newline Les mécaniques sont semblables à un Smash Bros en vue du dessus.}
 \end{twenty}
 
 %----------------------------------------------------------------------------------------
 %	 LANGUAGES
 %----------------------------------------------------------------------------------------
 
-\section{Languages}
+\section{Langues}
 
 \begin{twenty}
-	\twentyitem{French}{Native speaker}{}{}
-	\twentyitem{English}{Very good command}{}{}
+	\twentyitem{Français}{Langue maternelle}{}{}
+	\twentyitem{English}{Aisance à l'écrit et à l'oral}{}{}
 \end{twenty}
 %----------------------------------------------------------------------------------------
 %	 HOBBIES
 %----------------------------------------------------------------------------------------
 
-\section{Hobbies}
+\section{Passions}
 
 \begin{twenty}
-	\twentyitem{Photography}{Landscapes, holidays and events}{Beginner}{}
-	\twentyitem{Drawing}{Pencil and Ink}{Beginner}{}
+	\twentyitem{Impression 3D}{Figurines et décorations}{Débutant}{}
+	\twentyitem{Dessin}{Encre noire et numérique}{Débutant}{}
 \end{twenty}
 
 %----------------------------------------------------------------------------------------

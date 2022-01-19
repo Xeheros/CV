@@ -29,7 +29,9 @@
 \definecolor{white}{RGB}{255,255,255}
 \definecolor{gray}{HTML}{4D4D4D}
 \definecolor{sidecolor}{HTML}{E7E7E7}
-\definecolor{mainblue}{HTML}{0E5484}
+\definecolor{mainblue}{HTML}{34699a}
+%\definecolor{softblue}{HTML}{408ab4}
+\definecolor{softblue}{HTML}{34699a}
 \definecolor{maingray}{HTML}{B9B9B9}
 
 %----------------------------------------------------------------------------------------
@@ -149,7 +151,7 @@
 		%------------------------------------------------
 		
 		\ifthenelse{\equal{\aboutme}{}}{}{
-			\profilesection{About me}
+			\profilesection{A propos}
 				\begin{flushleft}
 					\justifying
 					\aboutme
@@ -159,7 +161,7 @@
 
 		%------------------------------------------------
 
-		\profilesection{Skills}
+		\profilesection{Compétences}
 
 		\skills
 		\skillstext
@@ -185,17 +187,17 @@
 	{%
 		\round{#1}{
 			\ifcase\value{colorCounter}%
-			maingray\or%
+			softblue\or%
 			mainblue\or%
-			maingray\or%
+			softblue\or%
 			mainblue\or%
-			maingray\or%
+			softblue\or%
 			mainblue\or%
-			maingray\or%
+			softblue\or%
 			mainblue\or%
- 			maingray\or%
+ 			softblue\or%
 			mainblue\else%
-			maingray\fi%
+			softblue\fi%
 		}%
 	}%
 	\stepcounter{colorCounter}%
